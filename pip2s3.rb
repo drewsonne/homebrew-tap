@@ -18,15 +18,21 @@ class Pip2s3 < Formula
   end
 
   def install
-    resource("pip2pi").stage { system "python", *Language::Python.setup_install_args(libexec/"vendor") }
-    resource("awscli").stage { system "python", *Language::Python.setup_install_args(libexec/"vendor") }
+    ENV.prepend_create_path "PYTHONPATH", libexec/"vendor/lib/python2.7/site-packages"
+    %w[pip2pi awscli].each do |dependency|
+      resource(dependency).stage { system "python", *Language::Python.setup_install_args(libexec/"vendor") }
+    end
+
     bin.install "pip2s3"
+
     inreplace "#{bin}/pip2s3" do |s|
       s.gsub! /pip2pi/, "#{libexec}/vendor/bin/pip2pi"
     end
+
     inreplace "#{bin}/pip2s3" do |s|
       s.gsub! /aws/, "#{libexec}/vendor/bin/aws"
     end
+
   end
 
   test do
