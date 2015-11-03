@@ -24,7 +24,9 @@ class Pip2s3 < Formula
     inreplace "#{bin}/pip2s3" do |s|
       s.gsub! /pip2pi/, "#{libexec}/vendor/bin/pip2pi"
     end
-    # inreplace "path", before, after
+    inreplace "#{bin}/pip2s3" do |s|
+      s.gsub! /aws/, "#{libexec}/vendor/bin/aws"
+    end
   end
 
   test do
