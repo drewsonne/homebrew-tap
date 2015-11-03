@@ -12,9 +12,17 @@ class Pip2s3 < Formula
     sha256 "01102883670742bdc2d3e6cc572fbb7263b3396699d2368d575dae9c6b4cbb87"
   end
 
+  resource "awscli" do
+    url "https://pypi.python.org/packages/source/a/awscli/awscli-1.9.3.tar.gz"
+    sha256 "2b932748f5293f76cc0582a4c7dcd8ec7a74455b7b287127cc7f9b124dc5b5bc"
+  end
+
   def install
     resource("pip2pi").stage { system "python", *Language::Python.setup_install_args(libexec/"vendor") }
+    resource("awscli").stage { system "python", *Language::Python.setup_install_args(libexec/"vendor") }
     bin.install "pip2s3"
+    # inreplace "#{bin}/pip2s3", 'PIP2PI_LOCATION="pip2pi"', "PIP2PI_LOCATION='#{libexec}/vendor/bin'"
+    # inreplace "path", before, after
   end
 
   test do
