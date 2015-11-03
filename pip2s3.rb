@@ -2,7 +2,7 @@
 class Pip2s3 < Formula
   desc "Creates a repository in s3 based on a requirements"
   homepage "https://github.com/drewsonne/pip2s3"
-  url "https://github.com/drewsonne/pip2s3/archive/0.1.1.tar.gz"
+  url "https://github.com/drewsonne/pip2s3/archive/0.1.2.tar.gz"
   version "0.1.2"
   sha256 "4b00e3098f37e8dd1f1ed6da9ae928cab5080a8cfe817faf315669bfd8041c08"
   depends_on "awscli"
