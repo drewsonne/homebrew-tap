@@ -22,7 +22,7 @@ class Pip2s3 < Formula
     resource("awscli").stage { system "python", *Language::Python.setup_install_args(libexec/"vendor") }
     bin.install "pip2s3"
     inreplace "#{bin}/pip2s3" do |s|
-      s.gsub! /PIP2PI_LOCATION='pip2pi'/, "PIP2PI_LOCATION='#{libexec}/vendor/bin/pip2pi'"
+      s.gsub! /pip2pi/, "#{libexec}/vendor/bin/pip2pi"
     end
     # inreplace "path", before, after
   end
