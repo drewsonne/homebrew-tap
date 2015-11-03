@@ -4,7 +4,7 @@ class Pip2s3 < Formula
   homepage "https://github.com/drewsonne/pip2s3"
   url "https://github.com/drewsonne/pip2s3/archive/0.1.1.tar.gz"
   version "0.1.1"
-  sha256 "146099ce6dfc07324c4f279e18e0fbb5667ed419d9e8152661f3bab116db9400"
+  sha256 "4b00e3098f37e8dd1f1ed6da9ae928cab5080a8cfe817faf315669bfd8041c08"
   depends_on "awscli"
 
   resource "pip2pi" do
