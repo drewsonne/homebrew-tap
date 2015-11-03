@@ -25,9 +25,6 @@ class Pip2s3 < Formula
 
     bin.install "pip2s3"
 
-    bin.env_script_all_files(libexec/"vendor/bin", :PYTHONPATH => ENV["PYTHONPATH"])
-
-
     inreplace "#{bin}/pip2s3" do |s|
       s.gsub! /pip2pi/, "#{libexec}/vendor/bin/pip2pi"
     end
@@ -35,6 +32,8 @@ class Pip2s3 < Formula
     inreplace "#{bin}/pip2s3" do |s|
       s.gsub! /aws/, "#{libexec}/vendor/bin/aws"
     end
+
+    bin.env_script_all_files(libexec/"vendor/bin", :PYTHONPATH => ENV["PYTHONPATH"])
 
   end
 
