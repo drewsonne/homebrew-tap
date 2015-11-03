@@ -1,8 +1,8 @@
 
-class PackageManagement < Formula
+class Pip2s3 < Formula
   desc "Creates a repository in s3 based on a requirements"
-  homepage "https://github.com/drewsonne/package-management"
-  url "https://github.com/drewsonne/package-management/archive/0.1.1.tar.gz"
+  homepage "https://github.com/drewsonne/pip2s3"
+  url "https://github.com/drewsonne/pip2s3/archive/0.1.1.tar.gz"
   version "0.1.1"
   sha256 "146099ce6dfc07324c4f279e18e0fbb5667ed419d9e8152661f3bab116db9400"
   depends_on "awscli"
