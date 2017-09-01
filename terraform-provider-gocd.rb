@@ -6,6 +6,7 @@ class TerraformProviderGocd < Formula
   sha256 "4490b7de3a538e613edfe9fe10dbba63dfb1d7930d7a42c36fd7ff34b3c02269"
 
   depends_on "drewsonne/devops/tf-install-provider"
+  depends_on "terraform"
 
   def install
     bin.install "terraform-provider-gocd"
