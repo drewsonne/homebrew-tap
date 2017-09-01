@@ -8,7 +8,7 @@ class TfInstallProvider < Formula
   # depends_on "cmake" => :build
 
   def install
-    bin.install "bin/tf-install-provider"
+    bin.install "tf-install-provider"
   end
 
 end
