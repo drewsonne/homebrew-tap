@@ -1,5 +1,7 @@
 #! /usr/bin/env bash
 
+set -x
+
 SUFFIX="$1"
 
 PROVIDER_NAME="terraform-provider-"${SUFFIX}
@@ -9,5 +11,5 @@ PLUGIN_DIR=${HOME}"/.terraform.d/plugins/darwin_amd64/"
 
 mkdir -p ${PLUGIN_DIR}
 
-cp ${PROVIDER_PATH} ${PLUGIN_DIR}
+install -o `id -u` -g `id -g` -m 755 ${PROVIDER_PATH} ${PLUGIN_DIR}
 
