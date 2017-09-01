@@ -1,0 +1,13 @@
+#! /usr/bin/env bash
+
+SUFFIX="$1"
+
+PROVIDER_NAME="terraform-provider-"${SUFFIX}
+PROVIDER_PATH=`which ${PROVIDER_NAME}`
+
+PLUGIN_DIR=${HOME}"/.terraform.d/plugins/darwin_amd64/"
+
+mkdir -p ${PLUGIN_DIR}
+
+cp ${PROVIDER_PATH} ${PLUGIN_DIR}
+

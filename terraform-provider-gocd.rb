@@ -1,5 +1,5 @@
 class TerraformProviderGocd < Formula
-  desc ""
+  desc "Terraform Provider to manage resources in GoCD Server"
   homepage "https://github.com/drewsonne/terraform-provider-gocd"
   url "https://github.com/drewsonne/terraform-provider-gocd/releases/download/0.0.11-rc2/terraform-provider-gocd-0.0.11-rc2-darwin-amd64.zip"
   version "0.0.11-rc2"
