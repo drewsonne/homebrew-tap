@@ -18,9 +18,8 @@ class TerraformProviderGocd < Formula
 
   def caveats
     """
-After installing, you will need to copy the provider to a place terraform can find it:
+After installing, you will need to copy the provider to a place terraform can find it by running:
   tf-install-provider gocd
-
 """
   end
 

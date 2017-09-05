@@ -3,8 +3,7 @@ require "language/go"
 class TerraformProviderArtifactory < Formula
   desc "Manage Artifactory with Terraform"
   homepage "https://github.com/webdevwilson/terraform-provider-artifactory"
-  version "1.0"
-  sha256 "4e684196d0c53d8278e99d38bd41591120aad631a1a6b9e65d4492e6cf31cc75"
+  version "1.0.1"
 
   depends_on "go" => :build
   depends_on "terraform"
@@ -41,14 +40,13 @@ class TerraformProviderArtifactory < Formula
   end
 
   test do
-    system "#{bin}/terraform-provider-gocd; [[ $? -eq 1 ]]"
+    system "#{bin}/terraform-provider-artifactory; [[ $? -eq 1 ]]"
   end
 
   def caveats
     """
-After installing, you will need to copy the provider to a place terraform can find it:
+After installing, you will need to copy the provider to a place terraform can find it by running:
   tf-install-provider artifactory
-
 """
   end
 
