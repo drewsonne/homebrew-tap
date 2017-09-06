@@ -3,7 +3,7 @@ class TfInstallProvider < Formula
   homepage "https://gist.github.com/drewsonne/693feb5278af158690cf65b1cb7d0e86"
   url "https://gist.github.com/drewsonne/693feb5278af158690cf65b1cb7d0e86/archive/de33c821535be3ac0b82c7b795314f314abdc1d8.zip"
   version "1.0.7"
-  sha256 "05821808c29605f794b3d4ea88e5f799ff2f67a48c42523bfea945ebe44be769"
+  sha256 "36241e7b020b947347392826732750243a6ccf8ddb975bc1615488d17a62836a"
 
   def install
     bin.install "tf-install-provider"
