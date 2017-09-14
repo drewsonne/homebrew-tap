@@ -7,7 +7,7 @@ class TerraformProviderArtifactory < Formula
 
   depends_on "go" => :build
   depends_on "terraform"
-  depends_on "drewsonne/devops/tf-install-provider"
+  depends_on "drewsonne/tap/tf-install-provider"
 
   url "https://github.com/webdevwilson/terraform-provider-artifactory.git",
     :revision => "a503e6f0d3656d0120be27b410f8cbaca88fa32e"
