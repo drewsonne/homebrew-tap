@@ -1,9 +1,9 @@
 class GoGocd < Formula
   desc ""
   homepage "https://github.com/drewsonne/gocdsdk"
-  url "https://github.com/drewsonne/go-gocd/releases/download/0.4.4/gocd-0.4.4-darwin-x86_64.zip"
-  version "0.4.4"
-  sha256 "06e135dc5ca585b4a0536a9fab1fcbca92a57bd3bf71f8aa1b1c372a9c41a8e1"
+  url "https://github.com/drewsonne/go-gocd/releases/download/0.5.0/gocd-0.5.0-darwin-x86_64.zip"
+  version "0.5.0"
+  sha256 "9a5a7d59f94bf56bf8d04a0aa6cc16b99077fba8c5f031944f8370dac6e09c72"
 
   def install
     bin.install "gocd"
