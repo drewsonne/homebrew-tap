@@ -1,9 +1,9 @@
 class TerraformProviderGocd < Formula
   desc ""
   homepage "https://github.com/drewsonne/terraform-provider-gocd"
-  url "https://github.com/drewsonne/terraform-provider-gocd/releases/download/0.1.11/terraform-provider-gocd-0.1.11-darwin-amd64.zip"
-  version "0.1.11"
-  sha256 "2b4d517b01ac5ab3948fedd50c32825ef2eea2458492e8ed51f14c21392a7d36"
+  url "https://github.com/drewsonne/terraform-provider-gocd/releases/download/0.1.12/terraform-provider-gocd-0.1.12-darwin-amd64.zip"
+  version "0.1.12"
+  sha256 "1cfebb8cad60032663df26d5e26290d0ec5df0422553831b31d748715e200230"
 
   def install
     bin.install "terraform-provider-gocd"
