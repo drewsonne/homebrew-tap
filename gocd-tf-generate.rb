@@ -1,9 +1,9 @@
 class GocdTfGenerate < Formula
   desc ""
   homepage "https://github.com/drewsonne/gocd-tf-generate"
-  url "https://github.com/drewsonne/gocd-tf-generate/releases/download/0.1.11/gocd-tf-generate-0.1.11-darwin-x86_64.zip"
-  version "0.1.11"
-  sha256 "a5b7796e843db868d31ab44bd2a6cd209d44bdf13066fc398c333acf112d78a5"
+  url "https://github.com/drewsonne/gocd-tf-generate/releases/download/0.1.12/gocd-tf-generate-0.1.12-darwin-x86_64.zip"
+  version "0.1.12"
+  sha256 "2edddd85f295c92dcf297bae21454bd5273511e157d04c915ff4f867760bc8ac"
 
   depends_on "drewsonne/tap/go-gocd"
 
