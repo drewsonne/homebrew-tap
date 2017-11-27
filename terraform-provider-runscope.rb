@@ -7,7 +7,7 @@ class TerraformProviderRunscope < Formula
 
   depends_on "go" => :build
   depends_on "terraform"
-  depends_on "drewsonne/devops/tf-install-provider"
+  depends_on "drewsonne/tap/tf-install-provider"
 
   url "https://github.com/ewilde/terraform-provider-runscope.git",
     :revision => "f0486e8af7da7234a7c4953cb154a920bd01f830",
