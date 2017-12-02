@@ -1,12 +1,21 @@
 class TerraformProviderGocd < Formula
-  desc ""
+  desc "Terraform Provider for ThoughtWorks GoCD"
   homepage "https://github.com/drewsonne/terraform-provider-gocd"
-  url "https://github.com/drewsonne/terraform-provider-gocd/releases/download/0.1.15/terraform-provider-gocd-0.1.15-darwin-amd64.zip"
-  version "0.1.15"
-  sha256 "84bdadde27800714325ad34049beb7d4137940de65e844a0a015a75fc99840be"
+  url "https://github.com/drewsonne/terraform-provider-gocd/releases/download/0.1.16/terraform-provider-gocd-0.1.16-darwin-amd64.zip"
+  version "0.1.16"
+  sha256 "fe790946f8cbd17dc37c0bda45b3fd7b6a41d6a63151ce23c896092ae544bebd"
+  
+  depends_on "terraform"
+  depends_on "drewsonne/homebrew-tap/tf-install-provider"
 
   def install
     bin.install "terraform-provider-gocd"
+  end
+
+  def caveats
+    "After installing, you will need to copy the provider to a place terraform can find it by running:
+  tf-install-provider artifactory
+"
   end
 
   test do
