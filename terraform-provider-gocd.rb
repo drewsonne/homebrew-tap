@@ -1,9 +1,9 @@
 class TerraformProviderGocd < Formula
   desc "Terraform Provider for ThoughtWorks GoCD"
   homepage "https://github.com/drewsonne/terraform-provider-gocd"
-  url "https://github.com/drewsonne/terraform-provider-gocd/releases/download/0.1.16/terraform-provider-gocd-0.1.16-darwin-amd64.zip"
-  version "0.1.16"
-  sha256 "fe790946f8cbd17dc37c0bda45b3fd7b6a41d6a63151ce23c896092ae544bebd"
+  url "https://github.com/drewsonne/terraform-provider-gocd/releases/download/0.1.17/terraform-provider-gocd-0.1.17-darwin-amd64.zip"
+  version "0.1.17"
+  sha256 "97568e247d7c06408cb195c24a7aadae9353de070376063225f00fbc19d55b49"
   
   depends_on "terraform"
   depends_on "drewsonne/homebrew-tap/tf-install-provider"
