@@ -1,5 +1,5 @@
 class GoGocd < Formula
-  desc "Terraform Provider for ThoughtWorks GoCD"
+  desc "This repo is deprecated. See `brew tap beamly/tap`. Terraform Provider for ThoughtWorks GoCD"
   homepage "https://github.com/drewsonne/terraform-provider-gocd"
   url "https://github.com/drewsonne/go-gocd/releases/download/0.6.15/gocd-0.6.15-darwin-x86_64.zip"
   version "0.6.15"
@@ -14,7 +14,7 @@ class GoGocd < Formula
   def caveats
     "After installing, you will need to copy the provider to a place terraform can find it by running:
   tf-install-provider artifactory
-"
+This is now being managed by beamly/homebrew-tap. No more updates will be provided through this repo"
   end
 
   test do
