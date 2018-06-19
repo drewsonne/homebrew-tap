@@ -5,7 +5,7 @@ class GocdTfGenerate < Formula
   version "0.1.13"
   sha256 "1eaff28af7b96eca71ecc66718a54bfc449c59fb6c183749d2bacc5326fb6961"
   
-  depends_on "drewsonne/tap/go-gocd"
+  depends_on "beamly/tap/go-gocd"
 
   def install
     bin.install "gocd-tf-generate"
