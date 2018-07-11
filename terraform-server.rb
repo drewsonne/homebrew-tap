@@ -3,7 +3,7 @@ class TerraformServer < Formula
   homepage ""
   url "https://github.com/drewsonne/terraform-server/releases/download/0.0.1/terraform-server_0.0.1_darwin_amd64.tar.gz"
   version "0.0.1"
-  sha256 "087af0b491f8f5ab1277aa08fa176e290ff88c8ffcee6b4b1e67593bcd496a31"
+  sha256 "5e2b9dd261d0c6aee9d66018357dfbac8e889f935ac8944a85f84591f0e3b9f5"
 
   def install
     bin.install "terraform-server"
